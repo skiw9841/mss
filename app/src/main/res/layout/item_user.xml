@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.mss.model.User"/>
+
+        <variable
+            name="imageRequestListener"
+            type="com.bumptech.glide.request.RequestListener" />
+
+        <variable
+            name="vm"
+            type="com.example.mss.ui.github.UsersViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/image_margin"
+            app:imageUrl="@{user.image}"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="@{user.login}"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="@{user.url}"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLikes"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="likes"/>
+            <!--android:onClick="@{()->vm.saveLikes(user) "/> -->
+    </LinearLayout>
+</layout>

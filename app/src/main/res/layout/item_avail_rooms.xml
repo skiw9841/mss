@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="rooms"
+            type="com.example.mss.uiapp.model.Rooms"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{rooms.name}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</layout>

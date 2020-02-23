@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">mss</string>
+    <string name="title_activity_github">github</string>
+
+    <string name="github">Github</string>
+    <string name="ui">UI</string>
+
+    <!-- GITHUB -->
+    <string name="search">SEARCH</string>
+    <string name="tab1_users">USERS</string>
+    <string name="tab2_likes">LIKES</string>
+
+    <!-- UI -->
+    <string name="today">02월 12일(수)</string>
+    <string name="rooms_avail">현재 사용 가능 회의실</string>
+    <string name="resvation_avail">예약가능</string>
+    <string name="external_meeting">외부미팅</string>
+    <string name="my_reservation">내 예약</string>
+    <string name="current_time">현재시간</string>
+
+</resources>
